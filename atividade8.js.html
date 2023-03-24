@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Atividade 8</title>
+</head>
+<body>
+    <script>
+let soma = 0;
+let numeros = [];
+let media = 0;
+ for(let i = 0; i < 4; i++){
+    numeros[i] = parseFloat(prompt("digite o: " + (i + 1) + "Valor: "));
+    if(numeros [i] > 0 && numeros [i] < 10){
+        media += numeros[i] / 4;
+    }
+ }
+ document.write("media dos valores inferiores a 10 e maiores que 0" + media);
+ if(media > 5){
+    document.write("<br> você passou no teste")
+ }else{
+    document.write("<br> tente novamente")
+ }
+     
+
+
+    </script>
+</body>
